@@ -16,7 +16,9 @@ const Chips = () => {
   }
 
   const b = bags.map((bag, i) => (
-    <img key={i} src={chipsImg} className="bag" style={{ top: `${bag.y}px`, left: `${bag.x}px` }} alt="lay's chip bag" />
+    <div style={{ position: 'absolute', top: `${bag.y}px`, left: `${bag.x}px` }}>
+      <img key={i} src={chipsImg} className="bag" alt="lay's chip bag" />
+    </div>
   ))
 
   return (
